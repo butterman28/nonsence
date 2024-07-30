@@ -1,0 +1,10 @@
+a {
+    color :#8892B0; /* Set the color to your preferred value */
+    text-decoration: none; /* Remove underline by default */
+  }
+.maindiv{
+  min-width: 600px;
+  max-width: 4000px;
+  min-height: 600px;
+  max-height: 4000px;
+}

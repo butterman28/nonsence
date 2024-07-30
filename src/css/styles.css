@@ -1,0 +1,93 @@
+.about{
+    margin-left:200px;
+    /* 
+    margin-top: 0px;
+    */
+}
+.abheader{
+    display: inline-flex;
+    color :#8892B0;
+}
+.aboutme{
+    display: inline;
+    font-size: 5em;
+}
+.app{
+    background-color: #0A192F;
+    margin: 0;
+}
+/
+.headerh5{
+    color: #53D3B9;
+    font-family: 'Courier New', monospace;
+    font-size: 2em;
+}
+.headerh1{
+    margin-top: px;
+    font-size: 5em;
+}
+*/
+.headerh12{
+    font-size: 5em;
+    color :#8892B0;
+}
+.navbar{
+    color :#8892B0;
+    font-family: 'Courier New', monospace;
+    
+}
+.nav{
+    list-style-position: inside;
+    color :#8892B0;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    padding: 0;
+}
+.nav li {
+    color :#8892B0;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+.para{
+    line-height: 1.2;
+    margin-right: 500px;
+    font-size: 20px;
+    color: #616D88;
+
+}
+
+.header{
+    /* 
+    margin-top: -1em;
+    margin-left: 1em;
+    */
+    padding-left: 100em;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 100px 10px;
+    color: #CCD6F6;
+    line-height: 0.3;
+}
+.headerlist{
+    list-style-position: inside;
+    color :#8892B0;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    padding: 0;
+}
+.headerlist li{
+    color :#8892B0;
+    display: inline-block;
+    padding: 5px;
+}
+.para1{
+    line-height: 1.2;
+    margin-top: -40px;
+    margin-right: 500px;
+    font-size: 20px;
+    color: #616D88;
+
+}
