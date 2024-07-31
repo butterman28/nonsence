@@ -24,9 +24,12 @@ function NavBar(){
   const toggleDrawer = (open) => () => {
     setOpen(open);
   };
+  const handleItemClick = () => {
+    setOpen(false);
+  };
 
   const drawerContent = (
-    <List>
+    <List color="transparent">
         <ListItem button component="a" href="#home">
         <Stack direction="column" alignItems="center" spacing={1}>
           <IconButton size="large" edge="start" sx={{ color: "#78869B" }} aria-label="logo">
@@ -37,37 +40,32 @@ function NavBar(){
       </ListItem>
       <Divider />
       <ListItem disablePadding component="a" href="#about">
-      <ListItemButton>
+      <ListItemButton onClick={handleItemClick}>
         <ListItemText primary="About" />
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding component="a" href="#experiance">
-      <ListItemButton>
+      <ListItemButton onClick={handleItemClick}>
         <ListItemText primary="Experience" />
         </ListItemButton>
       </ListItem>
-      <ListItem disablePadding component="a" href="#clients">
-      <ListItemButton>
-        <ListItemText primary="Work" />
-        </ListItemButton>
-      </ListItem>
       <ListItem disablePadding component="a" href="#contact">
-      <ListItemButton>
-        <ListItemText primary="Contact Us" />
+      <ListItemButton onClick={handleItemClick}>
+        <ListItemText primary="Contact" />
         </ListItemButton>
       </ListItem>
     </List>
   );
 
   return (
-      <AppBar position="absolute" color="transparent">
+      <AppBar position="fixed" sx={{ backgroundColor: "#0A192F" }}>
         <Toolbar>
           {isMobile ? (
             <>
               <IconButton size="large" edge="start" sx={{color:"#78869B"}} aria-label="menu" onClick={toggleDrawer(true)}>
                 <MenuIcon />
               </IconButton>
-              <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+              <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}  color="transparent">
                 {drawerContent}
               </Drawer>
             </>
@@ -80,10 +78,9 @@ function NavBar(){
                 My Portfolio
               </Typography>
               <Stack direction="row" spacing={2}>
-                <Button color="inherit" size="small" variant="contained" component="a" href="#about">About</Button>
-                <Button color="inherit" size="small" variant="contained" component="a" href="#experiance">Experience</Button>
-                <Button color="inherit" size="small" variant="contained" component="a" href="#clients">Work</Button>
-                <Button color="inherit" size="small" variant="contained" component="a" href="#contact">Contact Us</Button>
+                <Button  size="small" variant="contained" component="a" href="#about">About</Button>
+                <Button  size="small" variant="contained" component="a" href="#experiance">Experience</Button>
+                <Button  size="small" variant="contained" component="a" href="#contact">Contact</Button>
               </Stack>
             </>
           )}
