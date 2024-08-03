@@ -23,9 +23,8 @@ function Contact() {
             },
             backgroundColor: "transparent", // Example background color
           }}>
-            <Box textAlign="center" >
-            <Typography variant='h4'sx={{color:"#CCD6F6"}} >Contact</Typography>
-        <Stack textAlign="center" spacing={1}>
+            <Box textAlign="center"sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',}} >
+        <Stack textAlign="center" direction="row" spacing={-2}>
         <Button size="large" sx={{color:"#CCD6F6"}} startIcon={<GitHubIcon/>} component="a" href="https://github.com/butterman28/"></Button>
         <Button size="large" sx={{color:"#CCD6F6"}} startIcon={<LinkedInIcon/>} component="a" href="https://www.linkedin.com/in/itharmar-alegbeleye-205965209/"></Button>
         <Button size="large" sx={{color:"#CCD6F6" ,textTransform: "none" }} startIcon={<EmailIcon />}  component="a"href="mailto:Itharmarv@gmail.com"></Button>
